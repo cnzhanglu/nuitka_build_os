@@ -8,7 +8,7 @@ WORKDIR /build
 RUN yum install -y epel-release && \
     yum install -y python3 python3-devel patchelf gcc gcc-c++ make git wget openssh-server passwd && \
     yum clean all && \
-    rm -rf /var/cache/yum
+    rm -rf /var/cache/yum && \
     python3 -m pip install --upgrade pip && \
     python3 -m pip install nuitka
     
