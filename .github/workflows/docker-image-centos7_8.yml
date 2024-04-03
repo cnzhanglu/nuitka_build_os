@@ -27,7 +27,7 @@ jobs:
       run: |
         cd centos7_8
         docker build . --file Dockerfile --tag cnzhanglu/nuitka_build_os:centos7.8.2003
-        docker tag cnzhanglu/nuitka_build_os:7.8.2003 cnzhanglu/nuitka_build_os:centos7.8.2003.${{ env.TIMESTAMP }}
+        docker tag cnzhanglu/nuitka_build_os:centos7.8.2003 cnzhanglu/nuitka_build_os:centos7.8.2003.${{ env.TIMESTAMP }}
 
     - name: Log in to Docker Hub
       uses: docker/login-action@v2
